@@ -52,7 +52,7 @@ class RedBarBottom: UIView {
         
         NSLayoutConstraint.activate([
             icon.centerYAnchor.constraint(equalTo: centerYAnchor),
-            icon.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            icon.leftAnchor.constraint(equalTo: leftAnchor, constant: 24),
             icon.heightAnchor.constraint(equalToConstant: 24),
             icon.widthAnchor.constraint(equalToConstant: 24),
         ])
