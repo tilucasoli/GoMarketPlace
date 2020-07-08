@@ -67,6 +67,7 @@ class RedBarBottom: UIView {
             itensLabel.leftAnchor.constraint(equalTo: icon.rightAnchor, constant: 24)
         ])
     }
+    
     func setupPriceLabel() {
         addSubview(priceLabel)
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
