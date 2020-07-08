@@ -10,11 +10,13 @@
 		0323A0E724B5021400F5977E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0E624B5021400F5977E /* AppDelegate.swift */; };
 		0323A0E924B5021400F5977E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0E824B5021400F5977E /* SceneDelegate.swift */; };
 		0323A0EB24B5021400F5977E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0EA24B5021400F5977E /* ViewController.swift */; };
-		0323A0EE24B5021400F5977E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0323A0EC24B5021400F5977E /* Main.storyboard */; };
 		0323A0F024B5021500F5977E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0323A0EF24B5021500F5977E /* Assets.xcassets */; };
 		0323A0F324B5021500F5977E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0323A0F124B5021500F5977E /* LaunchScreen.storyboard */; };
 		0323A0FE24B5021600F5977E /* GoMarketplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0FD24B5021600F5977E /* GoMarketplaceTests.swift */; };
 		0323A10924B5021600F5977E /* GoMarketplaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A10824B5021600F5977E /* GoMarketplaceUITests.swift */; };
+		0323A11D24B50DBE00F5977E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A11C24B50DBE00F5977E /* Colors.swift */; };
+		0323A11F24B50F8A00F5977E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A11E24B50F8900F5977E /* LogoView.swift */; };
+		033549D424B5EF9400680A68 /* RedBarBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033549D324B5EF9400680A68 /* RedBarBottom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		0323A0E624B5021400F5977E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0323A0E824B5021400F5977E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0323A0EA24B5021400F5977E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0323A0ED24B5021400F5977E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0323A0EF24B5021500F5977E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0323A0F224B5021500F5977E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0323A0F424B5021500F5977E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		0323A10424B5021600F5977E /* GoMarketplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoMarketplaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0323A10824B5021600F5977E /* GoMarketplaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoMarketplaceUITests.swift; sourceTree = "<group>"; };
 		0323A10A24B5021600F5977E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0323A11C24B50DBE00F5977E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0323A11E24B50F8900F5977E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		033549D324B5EF9400680A68 /* RedBarBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBarBottom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		0323A0E524B5021400F5977E /* GoMarketplace */ = {
 			isa = PBXGroup;
 			children = (
+				0323A11B24B50D8700F5977E /* Utils */,
+				0323A11A24B50D6800F5977E /* Controller */,
+				0323A11924B50D6200F5977E /* View */,
+				0323A11824B50D5C00F5977E /* Model */,
 				0323A0E624B5021400F5977E /* AppDelegate.swift */,
 				0323A0E824B5021400F5977E /* SceneDelegate.swift */,
-				0323A0EA24B5021400F5977E /* ViewController.swift */,
-				0323A0EC24B5021400F5977E /* Main.storyboard */,
 				0323A0EF24B5021500F5977E /* Assets.xcassets */,
 				0323A0F124B5021500F5977E /* LaunchScreen.storyboard */,
 				0323A0F424B5021500F5977E /* Info.plist */,
@@ -126,6 +132,38 @@
 				0323A10A24B5021600F5977E /* Info.plist */,
 			);
 			path = GoMarketplaceUITests;
+			sourceTree = "<group>";
+		};
+		0323A11824B50D5C00F5977E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0323A11924B50D6200F5977E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0323A11E24B50F8900F5977E /* LogoView.swift */,
+				033549D324B5EF9400680A68 /* RedBarBottom.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0323A11A24B50D6800F5977E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0323A0EA24B5021400F5977E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0323A11B24B50D8700F5977E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0323A11C24B50DBE00F5977E /* Colors.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +272,6 @@
 			files = (
 				0323A0F324B5021500F5977E /* LaunchScreen.storyboard in Resources */,
 				0323A0F024B5021500F5977E /* Assets.xcassets in Resources */,
-				0323A0EE24B5021400F5977E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033549D424B5EF9400680A68 /* RedBarBottom.swift in Sources */,
+				0323A11F24B50F8A00F5977E /* LogoView.swift in Sources */,
 				0323A0EB24B5021400F5977E /* ViewController.swift in Sources */,
+				0323A11D24B50DBE00F5977E /* Colors.swift in Sources */,
 				0323A0E724B5021400F5977E /* AppDelegate.swift in Sources */,
 				0323A0E924B5021400F5977E /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0323A0EC24B5021400F5977E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0323A0ED24B5021400F5977E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0323A0F124B5021500F5977E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
