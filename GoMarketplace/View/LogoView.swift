@@ -15,8 +15,7 @@ class LogoView: UIView {
         
         imgView.image = UIImage(named: "Logo")
         imgView.contentMode = .scaleAspectFit
-        
-        imgView.translatesAutoresizingMaskIntoConstraints = false
+    
         return imgView
     }()
     
@@ -32,7 +31,8 @@ class LogoView: UIView {
     
     func setuplogo() {
         addSubview(logo)
-
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
             logo.topAnchor.constraint(equalTo: topAnchor),
             logo.leftAnchor.constraint(equalTo: leftAnchor),

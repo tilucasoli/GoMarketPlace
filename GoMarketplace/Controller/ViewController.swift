@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     let logo = LogoView()
-    
+    let redBar = RedBarBottom()
 //    let collectionView: UICollectionView = {
 //        
 //    }()
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .background
         setupLogo()
+        setupRedBar()
     }
     
     func setupLogo() {
@@ -31,6 +32,20 @@ class ViewController: UIViewController {
             logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             logo.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.47),
         ])
+    }
+    
+    func setupRedBar() {
+        view.addSubview(redBar)
+        redBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            redBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            redBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            redBar.rightAnchor.constraint(equalTo: view.rightAnchor),
+            redBar.leftAnchor.constraint(equalTo: view.leftAnchor),
+            redBar.heightAnchor.constraint(equalToConstant: 56),
+        ])
+        
     }
 
 }
