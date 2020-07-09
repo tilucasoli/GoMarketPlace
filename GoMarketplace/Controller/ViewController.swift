@@ -12,6 +12,12 @@ class ViewController: UIViewController {
     let logo = LogoView()
     let redBar = RedBarBottom()
     
+    let homeIndicatorColor: UIView = {
+        let view = UIView()
+        view.backgroundColor = .primaryColor
+        return view
+    }()
+    
     let collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width * 0.41, height: 241)
@@ -35,6 +41,7 @@ class ViewController: UIViewController {
         setupLogo()
         setupCollectionView()
         setupRedBar()
+        setupHomeIndicatorViewColor()
     }
     
     func setupLogo() {
@@ -64,7 +71,6 @@ class ViewController: UIViewController {
     
     func setupCollectionView() {
         view.addSubview(collectionView)
-        
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -72,6 +78,18 @@ class ViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24),
             collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24),
+        ])
+    }
+    
+    func setupHomeIndicatorViewColor() {
+        view.addSubview(homeIndicatorColor)
+        homeIndicatorColor.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            homeIndicatorColor.topAnchor.constraint(equalTo: redBar.bottomAnchor),
+            homeIndicatorColor.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            homeIndicatorColor.leftAnchor.constraint(equalTo: view.leftAnchor),
+            homeIndicatorColor.rightAnchor.constraint(equalTo: view.rightAnchor),
         ])
     }
 
