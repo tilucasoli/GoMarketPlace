@@ -62,7 +62,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
             productImage.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             productImage.centerXAnchor.constraint(equalTo: centerXAnchor),
             productImage.heightAnchor.constraint(equalTo: widthAnchor, multiplier: 0.78),
-            productImage.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.78),
+            productImage.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.78)
         ])
     }
     
@@ -83,7 +83,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             priceLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
-            priceLabel.topAnchor.constraint(equalTo: productName.bottomAnchor, constant: 8),
+            priceLabel.topAnchor.constraint(equalTo: productName.bottomAnchor, constant: 8)
         ])
     }
     

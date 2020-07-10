@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListagemViewController: UIViewController {
     let logo = LogoView()
     let redBar = RedBarBottom()
     
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             logo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            logo.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.47),
+            logo.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.47)
         ])
     }
     
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
             redBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             redBar.rightAnchor.constraint(equalTo: view.rightAnchor),
             redBar.leftAnchor.constraint(equalTo: view.leftAnchor),
-            redBar.heightAnchor.constraint(equalToConstant: 56),
+            redBar.heightAnchor.constraint(equalToConstant: 56)
         ])
         
     }
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
             collectionView.topAnchor.constraint(equalTo: logo.bottomAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24),
-            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24),
+            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24)
         ])
     }
     
@@ -89,27 +89,29 @@ class ViewController: UIViewController {
             homeIndicatorColor.topAnchor.constraint(equalTo: redBar.bottomAnchor),
             homeIndicatorColor.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             homeIndicatorColor.leftAnchor.constraint(equalTo: view.leftAnchor),
-            homeIndicatorColor.rightAnchor.constraint(equalTo: view.rightAnchor),
+            homeIndicatorColor.rightAnchor.constraint(equalTo: view.rightAnchor)
         ])
     }
 
 }
 
-extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate {
-    
+extension ListagemViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ProductCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
-        cell.productName.text = "Cadeira Gamer Charles"
-        cell.productImage.image = UIImage(named: "Cadeira")
-        cell.priceLabel.text = "300.00"
+        guard let productCell = cell as? ProductCollectionViewCell else {
+            return cell
+        }
+        
+        productCell.productName.text = "Cadeira Gamer Charles"
+        productCell.productImage.image = UIImage(named: "Cadeira")
+        productCell.priceLabel.text = "300.00"
         
         return cell
     }
-    
     
 }

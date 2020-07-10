@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0310D64724B6418700072AAD /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310D64624B6418700072AAD /* ProductCollectionViewCell.swift */; };
 		0310D64B24B651C500072AAD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310D64A24B651C500072AAD /* Product.swift */; };
+		03185F7D24B8A2B700D89FFA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 03185F7C24B8A2B700D89FFA /* .swiftlint.yml */; };
 		0323A0E724B5021400F5977E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0E624B5021400F5977E /* AppDelegate.swift */; };
 		0323A0E924B5021400F5977E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0E824B5021400F5977E /* SceneDelegate.swift */; };
-		0323A0EB24B5021400F5977E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0EA24B5021400F5977E /* ViewController.swift */; };
+		0323A0EB24B5021400F5977E /* ListagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0EA24B5021400F5977E /* ListagemViewController.swift */; };
 		0323A0F024B5021500F5977E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0323A0EF24B5021500F5977E /* Assets.xcassets */; };
 		0323A0F324B5021500F5977E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0323A0F124B5021500F5977E /* LaunchScreen.storyboard */; };
 		0323A0FE24B5021600F5977E /* GoMarketplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A0FD24B5021600F5977E /* GoMarketplaceTests.swift */; };
@@ -41,10 +42,11 @@
 /* Begin PBXFileReference section */
 		0310D64624B6418700072AAD /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		0310D64A24B651C500072AAD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		03185F7C24B8A2B700D89FFA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0323A0E324B5021400F5977E /* GoMarketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMarketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0323A0E624B5021400F5977E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0323A0E824B5021400F5977E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0323A0EA24B5021400F5977E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0323A0EA24B5021400F5977E /* ListagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListagemViewController.swift; sourceTree = "<group>"; };
 		0323A0EF24B5021500F5977E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0323A0F224B5021500F5977E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0323A0F424B5021500F5977E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				0323A11824B50D5C00F5977E /* Model */,
 				0323A0E624B5021400F5977E /* AppDelegate.swift */,
 				0323A0E824B5021400F5977E /* SceneDelegate.swift */,
+				03185F7C24B8A2B700D89FFA /* .swiftlint.yml */,
 				0323A0EF24B5021500F5977E /* Assets.xcassets */,
 				0323A0F124B5021500F5977E /* LaunchScreen.storyboard */,
 				0323A0F424B5021500F5977E /* Info.plist */,
@@ -159,7 +162,7 @@
 		0323A11A24B50D6800F5977E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0323A0EA24B5021400F5977E /* ViewController.swift */,
+				0323A0EA24B5021400F5977E /* ListagemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				0323A0DF24B5021400F5977E /* Sources */,
 				0323A0E024B5021400F5977E /* Frameworks */,
 				0323A0E124B5021400F5977E /* Resources */,
+				03185F7B24B89D5900D89FFA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -276,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03185F7D24B8A2B700D89FFA /* .swiftlint.yml in Resources */,
 				0323A0F324B5021500F5977E /* LaunchScreen.storyboard in Resources */,
 				0323A0F024B5021500F5977E /* Assets.xcassets in Resources */,
 			);
@@ -297,6 +302,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03185F7B24B89D5900D89FFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0323A0DF24B5021400F5977E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,7 +331,7 @@
 				0310D64B24B651C500072AAD /* Product.swift in Sources */,
 				0323A11F24B50F8A00F5977E /* LogoView.swift in Sources */,
 				0310D64724B6418700072AAD /* ProductCollectionViewCell.swift in Sources */,
-				0323A0EB24B5021400F5977E /* ViewController.swift in Sources */,
+				0323A0EB24B5021400F5977E /* ListagemViewController.swift in Sources */,
 				0323A11D24B50DBE00F5977E /* Colors.swift in Sources */,
 				0323A0E724B5021400F5977E /* AppDelegate.swift in Sources */,
 				0323A0E924B5021400F5977E /* SceneDelegate.swift in Sources */,
@@ -475,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
 				INFOPLIST_FILE = GoMarketplace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
 				INFOPLIST_FILE = GoMarketplace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

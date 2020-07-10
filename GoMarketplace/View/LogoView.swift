@@ -37,7 +37,7 @@ class LogoView: UIView {
             logo.topAnchor.constraint(equalTo: topAnchor),
             logo.leftAnchor.constraint(equalTo: leftAnchor),
             logo.rightAnchor.constraint(equalTo: rightAnchor),
-            logo.bottomAnchor.constraint(equalTo: bottomAnchor),
+            logo.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     

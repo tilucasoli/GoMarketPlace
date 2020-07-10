@@ -12,5 +12,4 @@ struct Product {
     let image: String
     let name: String
     let price: Double
-    
 }
