@@ -8,15 +8,10 @@
 
 import UIKit
 
-class ListagemViewController: UIViewController {
-    let logo = LogoView()
-    let redBar = RedBarBottom()
+class ListagemViewController: UIViewController, MarketplaceTemplate {
     
-    let homeIndicatorColor: UIView = {
-        let view = UIView()
-        view.backgroundColor = .primaryColor
-        return view
-    }()
+    var personalizedTopBar = LogoView()
+    var personalizedTabBar = RedBarBottom()
     
     let collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -38,35 +33,9 @@ class ListagemViewController: UIViewController {
         collectionView.delegate = self
         
         view.backgroundColor = .background
-        setupLogo()
+        personalizedTopBar = setupPersonalizedTopBar()
         setupCollectionView()
-        setupRedBar()
-        setupHomeIndicatorViewColor()
-    }
-    
-    func setupLogo() {
-        view.addSubview(logo)
-        logo.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            logo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            logo.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.47)
-        ])
-    }
-    
-    func setupRedBar() {
-        view.addSubview(redBar)
-        redBar.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            redBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            redBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            redBar.rightAnchor.constraint(equalTo: view.rightAnchor),
-            redBar.leftAnchor.constraint(equalTo: view.leftAnchor),
-            redBar.heightAnchor.constraint(equalToConstant: 56)
-        ])
-        
+        personalizedTabBar = setupPersonalizedTabBar()
     }
     
     func setupCollectionView() {
@@ -74,22 +43,10 @@ class ListagemViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: logo.bottomAnchor),
+            collectionView.topAnchor.constraint(equalTo: personalizedTopBar.bottomAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24),
             collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24)
-        ])
-    }
-    
-    func setupHomeIndicatorViewColor() {
-        view.addSubview(homeIndicatorColor)
-        homeIndicatorColor.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            homeIndicatorColor.topAnchor.constraint(equalTo: redBar.bottomAnchor),
-            homeIndicatorColor.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            homeIndicatorColor.leftAnchor.constraint(equalTo: view.leftAnchor),
-            homeIndicatorColor.rightAnchor.constraint(equalTo: view.rightAnchor)
         ])
     }
 

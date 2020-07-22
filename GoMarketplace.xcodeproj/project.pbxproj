@@ -20,6 +20,7 @@
 		0323A11D24B50DBE00F5977E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A11C24B50DBE00F5977E /* Colors.swift */; };
 		0323A11F24B50F8A00F5977E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A11E24B50F8900F5977E /* LogoView.swift */; };
 		033549D424B5EF9400680A68 /* RedBarBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033549D324B5EF9400680A68 /* RedBarBottom.swift */; };
+		03B727A624C62353001E2F68 /* MarketplaceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B727A524C62353001E2F68 /* MarketplaceTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		0323A11C24B50DBE00F5977E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0323A11E24B50F8900F5977E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		033549D324B5EF9400680A68 /* RedBarBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBarBottom.swift; sourceTree = "<group>"; };
+		03B727A524C62353001E2F68 /* MarketplaceTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		0323A0E524B5021400F5977E /* GoMarketplace */ = {
 			isa = PBXGroup;
 			children = (
+				03B727A424C6233F001E2F68 /* Protocol */,
 				0323A11B24B50D8700F5977E /* Utils */,
 				0323A11A24B50D6800F5977E /* Controller */,
 				0323A11924B50D6200F5977E /* View */,
@@ -173,6 +176,14 @@
 				0323A11C24B50DBE00F5977E /* Colors.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		03B727A424C6233F001E2F68 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				03B727A524C62353001E2F68 /* MarketplaceTemplate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 				0323A0EB24B5021400F5977E /* ListagemViewController.swift in Sources */,
 				0323A11D24B50DBE00F5977E /* Colors.swift in Sources */,
 				0323A0E724B5021400F5977E /* AppDelegate.swift in Sources */,
+				03B727A624C62353001E2F68 /* MarketplaceTemplate.swift in Sources */,
 				0323A0E924B5021400F5977E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
