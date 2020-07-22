@@ -20,6 +20,9 @@
 		0323A11D24B50DBE00F5977E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A11C24B50DBE00F5977E /* Colors.swift */; };
 		0323A11F24B50F8A00F5977E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323A11E24B50F8900F5977E /* LogoView.swift */; };
 		033549D424B5EF9400680A68 /* RedBarBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033549D324B5EF9400680A68 /* RedBarBottom.swift */; };
+		0369D52824C89AA8005E547D /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369D52724C89AA8005E547D /* CarrinhoViewController.swift */; };
+		0369D52A24C89C15005E547D /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369D52924C89C15005E547D /* ShopList.swift */; };
+		0369D52C24C89F59005E547D /* CarrinhoProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369D52B24C89F59005E547D /* CarrinhoProductTableViewCell.swift */; };
 		03B727A624C62353001E2F68 /* MarketplaceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B727A524C62353001E2F68 /* MarketplaceTemplate.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,9 @@
 		0323A11C24B50DBE00F5977E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0323A11E24B50F8900F5977E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		033549D324B5EF9400680A68 /* RedBarBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBarBottom.swift; sourceTree = "<group>"; };
+		0369D52724C89AA8005E547D /* CarrinhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
+		0369D52924C89C15005E547D /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
+		0369D52B24C89F59005E547D /* CarrinhoProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrinhoProductTableViewCell.swift; sourceTree = "<group>"; };
 		03B727A524C62353001E2F68 /* MarketplaceTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				0310D64A24B651C500072AAD /* Product.swift */,
+				0369D52924C89C15005E547D /* ShopList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 				0323A11E24B50F8900F5977E /* LogoView.swift */,
 				033549D324B5EF9400680A68 /* RedBarBottom.swift */,
 				0310D64624B6418700072AAD /* ProductCollectionViewCell.swift */,
+				0369D52B24C89F59005E547D /* CarrinhoProductTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				0323A0EA24B5021400F5977E /* ListagemViewController.swift */,
+				0369D52724C89AA8005E547D /* CarrinhoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,8 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0369D52824C89AA8005E547D /* CarrinhoViewController.swift in Sources */,
 				033549D424B5EF9400680A68 /* RedBarBottom.swift in Sources */,
 				0310D64B24B651C500072AAD /* Product.swift in Sources */,
+				0369D52A24C89C15005E547D /* ShopList.swift in Sources */,
 				0323A11F24B50F8A00F5977E /* LogoView.swift in Sources */,
 				0310D64724B6418700072AAD /* ProductCollectionViewCell.swift in Sources */,
 				0323A0EB24B5021400F5977E /* ListagemViewController.swift in Sources */,
@@ -347,6 +358,7 @@
 				0323A0E724B5021400F5977E /* AppDelegate.swift in Sources */,
 				03B727A624C62353001E2F68 /* MarketplaceTemplate.swift in Sources */,
 				0323A0E924B5021400F5977E /* SceneDelegate.swift in Sources */,
+				0369D52C24C89F59005E547D /* CarrinhoProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

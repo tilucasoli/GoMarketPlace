@@ -10,12 +10,13 @@ import UIKit
 
 class RedBarBottom: UIView {
     
-    let icon: UIImageView = {
-        let img = UIImageView()
-        img.image = UIImage(named: "Carrinho")
-        img.contentMode = .scaleAspectFit
-        return img
+    let icon: UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage(named: "Carrinho"), for: .normal)
+        btn.imageView?.contentMode = .scaleAspectFit
+        return btn
     }()
+
     
     let itensLabel: UILabel = {
         let label = UILabel()
